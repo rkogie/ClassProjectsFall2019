@@ -1,0 +1,15 @@
+C:\Users\kogie5792\source\repos\LotteryPickerApplication\bin\Debug\LotteryPickerApplication.exe.config
+C:\Users\kogie5792\source\repos\LotteryPickerApplication\bin\Debug\LotteryPickerApplication.exe
+C:\Users\kogie5792\source\repos\LotteryPickerApplication\bin\Debug\LotteryPickerApplication.pdb
+C:\Users\kogie5792\source\repos\LotteryPickerApplication\obj\Debug\LotteryPickerApplication.csprojAssemblyReference.cache
+C:\Users\kogie5792\source\repos\LotteryPickerApplication\obj\Debug\MainWindow.g.cs
+C:\Users\kogie5792\source\repos\LotteryPickerApplication\obj\Debug\App.g.cs
+C:\Users\kogie5792\source\repos\LotteryPickerApplication\obj\Debug\LotteryPickerApplication_MarkupCompile.cache
+C:\Users\kogie5792\source\repos\LotteryPickerApplication\obj\Debug\LotteryPickerApplication_MarkupCompile.lref
+C:\Users\kogie5792\source\repos\LotteryPickerApplication\obj\Debug\MainWindow.baml
+C:\Users\kogie5792\source\repos\LotteryPickerApplication\obj\Debug\LotteryPickerApplication.g.resources
+C:\Users\kogie5792\source\repos\LotteryPickerApplication\obj\Debug\LotteryPickerApplication.Properties.Resources.resources
+C:\Users\kogie5792\source\repos\LotteryPickerApplication\obj\Debug\LotteryPickerApplication.csproj.GenerateResource.cache
+C:\Users\kogie5792\source\repos\LotteryPickerApplication\obj\Debug\LotteryPickerApplication.csproj.CoreCompileInputs.cache
+C:\Users\kogie5792\source\repos\LotteryPickerApplication\obj\Debug\LotteryPickerApplication.exe
+C:\Users\kogie5792\source\repos\LotteryPickerApplication\obj\Debug\LotteryPickerApplication.pdb

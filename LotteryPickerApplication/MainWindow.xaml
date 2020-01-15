@@ -1,0 +1,26 @@
+﻿<Window x:Name="Lottery_Picker" x:Class="LotteryPickerApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LotteryPickerApplication"
+        mc:Ignorable="d"
+        Title="Lottery Picker" Height="272" Width="369">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="14*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="ThreeLabel" Content="Three number lottery:" HorizontalAlignment="Left" Height="25" Margin="17,22,0,0" VerticalAlignment="Top" Width="130" Grid.ColumnSpan="2"/>
+        <Label x:Name="fourLabel" Content="Four number lottery:" HorizontalAlignment="Left" Height="25" Margin="17,63,0,0" VerticalAlignment="Top" Width="130" Grid.ColumnSpan="2"/>
+        <Label x:Name="FiveLabel" Content="Five number lottery:" HorizontalAlignment="Left" Height="30" Margin="17,105,0,0" VerticalAlignment="Top" Width="130" Grid.ColumnSpan="2"/>
+        <Label Content="Five number + 1 lottery:" HorizontalAlignment="Left" Height="30" Margin="17,144,0,0" VerticalAlignment="Top" Width="162" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="ThreeTBox" HorizontalAlignment="Left" Height="25" Margin="80,24,0,0" VerticalAlignment="Top" Width="155" TextAlignment="Center" Grid.Column="1"/>
+        <TextBox x:Name="FourTBox" HorizontalAlignment="Left" Height="25" Margin="80,66,0,0" VerticalAlignment="Top" Width="155" TextAlignment="Center" Grid.Column="1"/>
+        <TextBox x:Name="FiveTBox" HorizontalAlignment="Left" Height="23" Margin="80,107,0,0" VerticalAlignment="Top" Width="155" TextAlignment="Center" Grid.Column="1"/>
+        <TextBox x:Name="FivePlusOneTbox" HorizontalAlignment="Left" Height="24" Margin="80,147,0,0" VerticalAlignment="Top" Width="115" TextAlignment="Center" Grid.Column="1"/>
+        <TextBox x:Name="PlusOneTbox" HorizontalAlignment="Left" Height="24" Margin="205,147,0,0" VerticalAlignment="Top" Width="30" TextAlignment="Center" Grid.Column="1"/>
+        <Button x:Name="GenerateButton" Content="Generate" HorizontalAlignment="Left" Height="25" Margin="105,190,0,0" VerticalAlignment="Top" Width="130" Click="GenerateButton_Click" Grid.Column="1"/>
+
+    </Grid>
+</Window>
