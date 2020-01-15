@@ -1,0 +1,15 @@
+C:\Users\kogie5792\source\repos\LoanRepaymentCalculator\bin\Debug\LoanRepaymentCalculator.exe.config
+C:\Users\kogie5792\source\repos\LoanRepaymentCalculator\bin\Debug\LoanRepaymentCalculator.exe
+C:\Users\kogie5792\source\repos\LoanRepaymentCalculator\bin\Debug\LoanRepaymentCalculator.pdb
+C:\Users\kogie5792\source\repos\LoanRepaymentCalculator\obj\Debug\LoanRepaymentCalculator.csprojAssemblyReference.cache
+C:\Users\kogie5792\source\repos\LoanRepaymentCalculator\obj\Debug\MainWindow.g.cs
+C:\Users\kogie5792\source\repos\LoanRepaymentCalculator\obj\Debug\App.g.cs
+C:\Users\kogie5792\source\repos\LoanRepaymentCalculator\obj\Debug\LoanRepaymentCalculator_MarkupCompile.cache
+C:\Users\kogie5792\source\repos\LoanRepaymentCalculator\obj\Debug\LoanRepaymentCalculator_MarkupCompile.lref
+C:\Users\kogie5792\source\repos\LoanRepaymentCalculator\obj\Debug\MainWindow.baml
+C:\Users\kogie5792\source\repos\LoanRepaymentCalculator\obj\Debug\LoanRepaymentCalculator.g.resources
+C:\Users\kogie5792\source\repos\LoanRepaymentCalculator\obj\Debug\LoanRepaymentCalculator.Properties.Resources.resources
+C:\Users\kogie5792\source\repos\LoanRepaymentCalculator\obj\Debug\LoanRepaymentCalculator.csproj.GenerateResource.cache
+C:\Users\kogie5792\source\repos\LoanRepaymentCalculator\obj\Debug\LoanRepaymentCalculator.csproj.CoreCompileInputs.cache
+C:\Users\kogie5792\source\repos\LoanRepaymentCalculator\obj\Debug\LoanRepaymentCalculator.exe
+C:\Users\kogie5792\source\repos\LoanRepaymentCalculator\obj\Debug\LoanRepaymentCalculator.pdb
