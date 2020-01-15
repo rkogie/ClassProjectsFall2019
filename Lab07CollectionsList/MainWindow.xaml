@@ -1,0 +1,24 @@
+﻿<Window x:Class="Lab07CollectionsList.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab07CollectionsList"
+        mc:Ignorable="d"
+        Title="Customer Account Details" Height="292" Width="439">
+    <Grid>
+        <Label x:Name="firstLabel" Content="First Name:" HorizontalAlignment="Left" Height="30" Margin="66,80,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="lastLabel" Content="Last Name:" HorizontalAlignment="Left" Height="25" Margin="66,119,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="accLabel" Content="Account Number:" HorizontalAlignment="Left" Height="30" Margin="66,156,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label x:Name="balLabel" Content="Balance:               $" HorizontalAlignment="Left" Height="25" Margin="66,196,0,0" VerticalAlignment="Top" Width="139"/>
+        <TextBox x:Name="firstTBox" HorizontalAlignment="Left" Height="25" Margin="175,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99"/>
+        <TextBox x:Name="lastTBox" HorizontalAlignment="Left" Height="25" Margin="175,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99"/>
+        <TextBox x:Name="accTBox" HorizontalAlignment="Left" Height="25" Margin="175,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99"/>
+        <TextBox x:Name="balTBox" HorizontalAlignment="Left" Height="25" Margin="175,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99"/>
+        <Button x:Name="addButton" Content="Add New" HorizontalAlignment="Left" Height="25" Margin="300,80,0,0" VerticalAlignment="Top" Width="90" Click="AddButton_Click"/>
+        <Button x:Name="saveButton" Content="Save" HorizontalAlignment="Left" Height="25" Margin="300,119,0,0" VerticalAlignment="Top" Width="90" Click="SaveButton_Click"/>
+        <Button x:Name="previousButton" Content="Previous" HorizontalAlignment="Left" Height="24" Margin="66,41,0,0" VerticalAlignment="Top" Width="90" Click="PreviousButton_Click"/>
+        <Button x:Name="nextButton" Content="Next" HorizontalAlignment="Left" Height="24" Margin="184,41,0,0" VerticalAlignment="Top" Width="90" Click="NextButton_Click"/>
+        <Button x:Name="deleteButton" Content="Delete" HorizontalAlignment="Left" Height="25" Margin="300,159,0,0" VerticalAlignment="Top" Width="90" Click="DeleteButton_Click"/>
+    </Grid>
+</Window>

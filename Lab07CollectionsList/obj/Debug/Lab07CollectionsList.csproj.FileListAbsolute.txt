@@ -1,0 +1,15 @@
+C:\Users\kogie5792\source\repos\Lab07CollectionsList\obj\Debug\Lab07CollectionsList.csprojAssemblyReference.cache
+C:\Users\kogie5792\source\repos\Lab07CollectionsList\obj\Debug\MainWindow.g.cs
+C:\Users\kogie5792\source\repos\Lab07CollectionsList\obj\Debug\App.g.cs
+C:\Users\kogie5792\source\repos\Lab07CollectionsList\obj\Debug\Lab07CollectionsList_MarkupCompile.cache
+C:\Users\kogie5792\source\repos\Lab07CollectionsList\obj\Debug\Lab07CollectionsList_MarkupCompile.lref
+C:\Users\kogie5792\source\repos\Lab07CollectionsList\bin\Debug\Lab07CollectionsList.exe.config
+C:\Users\kogie5792\source\repos\Lab07CollectionsList\bin\Debug\Lab07CollectionsList.exe
+C:\Users\kogie5792\source\repos\Lab07CollectionsList\bin\Debug\Lab07CollectionsList.pdb
+C:\Users\kogie5792\source\repos\Lab07CollectionsList\obj\Debug\MainWindow.baml
+C:\Users\kogie5792\source\repos\Lab07CollectionsList\obj\Debug\Lab07CollectionsList.g.resources
+C:\Users\kogie5792\source\repos\Lab07CollectionsList\obj\Debug\Lab07CollectionsList.Properties.Resources.resources
+C:\Users\kogie5792\source\repos\Lab07CollectionsList\obj\Debug\Lab07CollectionsList.csproj.GenerateResource.cache
+C:\Users\kogie5792\source\repos\Lab07CollectionsList\obj\Debug\Lab07CollectionsList.csproj.CoreCompileInputs.cache
+C:\Users\kogie5792\source\repos\Lab07CollectionsList\obj\Debug\Lab07CollectionsList.exe
+C:\Users\kogie5792\source\repos\Lab07CollectionsList\obj\Debug\Lab07CollectionsList.pdb
