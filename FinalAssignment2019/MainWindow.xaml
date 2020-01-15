@@ -1,0 +1,169 @@
+﻿<Window x:Class="FinalAssignment2019.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalAssignment2019"
+        mc:Ignorable="d"
+        Title="E Factory Order System" Height="752" Width="759">
+    <Window.Resources>
+        <local:OrdersDataSet x:Key="ordersDataSet"/>
+        <CollectionViewSource x:Key="carOrdersViewSource" Source="{Binding CarOrders, Source={StaticResource ordersDataSet}}"/>
+        <CollectionViewSource x:Key="carOrdersCarOrderOptionsViewSource" Source="{Binding FK_CarOrderOptions_ToTable, Source={StaticResource carOrdersViewSource}}"/>
+    </Window.Resources>
+    <Grid>
+        <Label x:Name="MainHeaderLabel" Content="E-Car Factory Order System" HorizontalAlignment="Left" Height="35" Margin="37,10,0,0" VerticalAlignment="Top" Width="333" FontFamily="Arial" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="IntroTextLabel" Content="Enter a new order, or select an existing order in the listbox below to edit" HorizontalAlignment="Left" Height="30" Margin="37,52,0,0" VerticalAlignment="Top" Width="405" FontFamily="Arial"/>
+        <Label x:Name="OrderRecordLabel" Content="E-Car Order Record" HorizontalAlignment="Left" Height="33" Margin="37,82,0,0" VerticalAlignment="Top" Width="190" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="SaveButtonOrderRecord" Content="Save" HorizontalAlignment="Left" Height="25" Margin="462,114,0,0" VerticalAlignment="Top" Width="73" FontFamily="Arial" Click="SaveButtonOrderRecord_Click"/>
+        <Button x:Name="DeleteButtonOrderRecord" Content="Delete" HorizontalAlignment="Left" Height="25" Margin="550,114,0,0" VerticalAlignment="Top" Width="73" FontFamily="Arial" Click="DeleteButtonOrderRecord_Click"/>
+        <Button x:Name="NewButtonOrderRecord" Content="New" HorizontalAlignment="Left" Height="25" Margin="640,114,0,0" VerticalAlignment="Top" Width="70" FontFamily="Arial" Click="NewButtonOrderRecord_Click"/>
+        <Label x:Name="OrderListBoxLabel" Content="E-Car Order Record (select a row to edit)" HorizontalAlignment="Left" Height="33" Margin="37,225,0,0" VerticalAlignment="Top" Width="298" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
+        <ListBox x:Name="CustomerOrderListBox" HorizontalAlignment="Left" Height="104" Margin="37,275,0,0" VerticalAlignment="Top" Width="673" FontFamily="Consolas" BorderThickness="4" SelectionChanged="CustomerOrderListBox_SelectionChanged"/>
+        <Label x:Name="OrderOptionListBoxLabel" Content="E-Car Order Options for Selected Order (select a row to edit)" HorizontalAlignment="Left" Height="33" Margin="37,379,0,0" VerticalAlignment="Top" Width="418" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
+        <ListBox x:Name="OrderOptionListBox" HorizontalAlignment="Left" Height="99" Margin="37,430,0,0" VerticalAlignment="Top" Width="673" FontFamily="Consolas" BorderThickness="4" SelectionChanged="OrderOptionListBox_SelectionChanged"/>
+        <Label x:Name="OrderOptionRecordLabel" Content="E-Car Order Option Record for Selected Option " HorizontalAlignment="Left" Height="33" Margin="37,539,0,0" VerticalAlignment="Top" Width="333" FontFamily="Arial" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="SaveButtonOptionRecord" Content="Save" HorizontalAlignment="Left" Height="25" Margin="253,572,0,0" VerticalAlignment="Top" Width="73" FontFamily="Arial" Click="SaveButtonOptionRecord_Click"/>
+        <Button x:Name="DeleteButtonOptionRecord" Content="Delete" HorizontalAlignment="Left" Height="25" Margin="341,572,0,0" VerticalAlignment="Top" Width="73" FontFamily="Arial" Click="DeleteButtonOptionRecord_Click"/>
+        <Button x:Name="NewButtonOptionRecord" Content="New" HorizontalAlignment="Left" Height="25" Margin="431,572,0,0" VerticalAlignment="Top" Width="70" FontFamily="Arial" Click="NewButtonOptionRecord_Click"/>
+        <Label x:Name="SubtotalLabel" Content="Subtotal" HorizontalAlignment="Left" Height="30" Margin="545,572,0,0" VerticalAlignment="Top" Width="55" FontFamily="Arial"/>
+        <TextBox x:Name="SubtotalTBox" HorizontalAlignment="Left" Height="25" Margin="620,572,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" FontFamily="Arial" BorderThickness="2" IsReadOnly="True"/>
+        <Label x:Name="PSTLabel" Content="PST (6%)" HorizontalAlignment="Left" Height="30" Margin="545,607,0,0" VerticalAlignment="Top" Width="70" FontFamily="Arial"/>
+        <TextBox x:Name="PSTTBox" HorizontalAlignment="Left" Height="25" Margin="620,607,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" FontFamily="Arial" BorderThickness="2" IsReadOnly="True"/>
+        <Label x:Name="GSTLabel" Content="GST (5%)" HorizontalAlignment="Left" Height="30" Margin="545,642,0,0" VerticalAlignment="Top" Width="70" FontFamily="Arial"/>
+        <TextBox x:Name="GSTTBox" HorizontalAlignment="Left" Height="25" Margin="620,642,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" FontFamily="Arial" BorderThickness="2" IsReadOnly="True"/>
+        <Label x:Name="TotalLabel" Content="Order Total" HorizontalAlignment="Left" Height="30" Margin="545,677,0,0" VerticalAlignment="Top" Width="75" FontFamily="Arial" FontWeight="Bold"/>
+        <TextBox x:Name="TotalTBox" HorizontalAlignment="Left" Height="25" Margin="620,677,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" FontFamily="Arial" BorderThickness="2" BorderBrush="#FF38383A" IsReadOnly="True"/>
+        <Grid x:Name="grid1" DataContext="{StaticResource carOrdersViewSource}" HorizontalAlignment="Left" Margin="239,111,0,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="Order Date:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+            <DatePicker x:Name="orderDateDatePicker" Grid.Column="1" HorizontalAlignment="Left" Margin="3" Grid.Row="0" SelectedDate="{Binding OrderDate, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center"/>
+        </Grid>
+        <Grid x:Name="grid2" DataContext="{StaticResource carOrdersViewSource}" HorizontalAlignment="Left" Margin="514,206,0,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="Delivery Date:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+            <DatePicker x:Name="deliveryDateDatePicker" Grid.Column="1" HorizontalAlignment="Left" Margin="3" Grid.Row="0" SelectedDate="{Binding DeliveryDate, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center"/>
+        </Grid>
+        <Grid x:Name="grid3" DataContext="{StaticResource carOrdersViewSource}" HorizontalAlignment="Left" Margin="34,112,0,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="Order Number:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+            <TextBox x:Name="orderNumberTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="5,4,0,4" Grid.Row="0" Text="{Binding OrderNumber, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="96" IsReadOnly="True"/>
+        </Grid>
+        <Grid x:Name="grid4" DataContext="{StaticResource carOrdersViewSource}" HorizontalAlignment="Left" Margin="35,145,0,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="Customer Name:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+            <TextBox x:Name="customerNameTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="3,4,-17,4" Grid.Row="0" Text="{Binding CustomerName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="140"/>
+        </Grid>
+        <Grid x:Name="grid5" DataContext="{StaticResource carOrdersViewSource}" HorizontalAlignment="Left" Margin="476,145,0,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="Customer Email:" Grid.Column="0" HorizontalAlignment="Left" Margin="-16,0,0,6" Grid.Row="0" VerticalAlignment="Center"/>
+            <TextBox x:Name="customerEmailTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="3,4,-29,4" Grid.Row="0" Text="{Binding CustomerEmail, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="152"/>
+        </Grid>
+        <Grid x:Name="grid6" DataContext="{StaticResource carOrdersViewSource}" HorizontalAlignment="Left" Margin="34,178,0,0" VerticalAlignment="Top" Width="245">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="Customer Address:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+            <TextBox x:Name="customerAddressTextBox" HorizontalAlignment="Left" Height="25" Margin="115,4,-181,3" Grid.Row="0" Text="{Binding CustomerAddress, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="311" Grid.ColumnSpan="2"/>
+        </Grid>
+        <Grid x:Name="grid7" DataContext="{StaticResource carOrdersViewSource}" HorizontalAlignment="Left" Margin="594,175,0,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="In Production:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+            <CheckBox x:Name="inProductionCheckBox" Content="" Grid.Column="1" HorizontalAlignment="Left" IsChecked="{Binding InProduction, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+        </Grid>
+        <Grid x:Name="grid8" DataContext="{StaticResource carOrdersCarOrderOptionsViewSource}" HorizontalAlignment="Left" Margin="29,568,0,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="Option ID:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+            <TextBox x:Name="optionIDTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="3,4,0,4" Grid.Row="0" Text="{Binding OptionID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="73"/>
+        </Grid>
+        <Grid x:Name="grid9" DataContext="{StaticResource carOrdersCarOrderOptionsViewSource}" HorizontalAlignment="Left" Margin="28,602,0,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="Option Name:" Grid.Column="0" HorizontalAlignment="Left" Margin="4,3,0,3" Grid.Row="0" VerticalAlignment="Center"/>
+            <TextBox x:Name="optionNameTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="3,4,-23,4" Grid.Row="0" Text="{Binding OptionName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="115"/>
+        </Grid>
+        <Grid x:Name="grid10" DataContext="{StaticResource carOrdersCarOrderOptionsViewSource}" HorizontalAlignment="Left" Margin="28,637,0,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="Option Description:" Grid.Column="0" HorizontalAlignment="Left" Margin="4,3,0,3" Grid.Row="0" VerticalAlignment="Center"/>
+            <TextBox x:Name="optionDescriptionTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="3,4,-94,4" Grid.Row="0" Text="{Binding OptionDescription, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="217"/>
+        </Grid>
+        <Grid x:Name="grid11" DataContext="{StaticResource carOrdersCarOrderOptionsViewSource}" HorizontalAlignment="Left" Margin="29,672,0,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="Option Price:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+            <TextBox x:Name="optionPriceTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0" VerticalAlignment="Center" Width="120"/>
+        </Grid>
+        <Label x:Name="errorMessLabel" Content="" HorizontalAlignment="Left" Height="25" Margin="239,81,0,0" VerticalAlignment="Top" Width="471" FontFamily="Arial"/>
+        <Label x:Name="OrderNumberHeaderLabel" Content="Order Number" HorizontalAlignment="Left" Height="23" Margin="37,252,0,0" VerticalAlignment="Top" Width="95" FontFamily="Consolas" FontWeight="Bold"/>
+        <Label x:Name="CustomerHeaderLabel" Content="Customer" HorizontalAlignment="Left" Height="23" Margin="174,252,0,0" VerticalAlignment="Top" Width="95" FontFamily="Consolas" FontWeight="Bold"/>
+        <Label x:Name="EmailHeaderLabel" Content="Email Address" HorizontalAlignment="Left" Height="23" Margin="371,252,0,0" VerticalAlignment="Top" Width="95" FontFamily="Consolas" FontWeight="Bold"/>
+        <Label x:Name="inProdHeaderLabel" Content="In Production?" HorizontalAlignment="Left" Height="23" Margin="571,252,0,0" VerticalAlignment="Top" Width="106" FontFamily="Consolas" FontWeight="Bold"/>
+        <Label x:Name="OptionIDHeaderLabel" Content="Option ID" HorizontalAlignment="Left" Height="23" Margin="37,408,0,0" VerticalAlignment="Top" Width="95" FontFamily="Consolas" FontWeight="Bold"/>
+        <Label x:Name="OptionNameHeaderLabel" Content="Option Name" HorizontalAlignment="Left" Height="23" Margin="176,408,0,0" VerticalAlignment="Top" Width="95" FontFamily="Consolas" FontWeight="Bold"/>
+        <Label x:Name="DescriptionHeaderLabel" Content="Option Description" HorizontalAlignment="Left" Height="23" Margin="373,408,0,0" VerticalAlignment="Top" Width="133" FontFamily="Consolas" FontWeight="Bold"/>
+        <Label x:Name="PriceHeaderLabel" Content="Price" HorizontalAlignment="Left" Height="23" Margin="572,408,0,0" VerticalAlignment="Top" Width="73" FontFamily="Consolas" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
