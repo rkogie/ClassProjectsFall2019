@@ -1,0 +1,15 @@
+C:\Users\kogie5792\source\repos\InvoiceTaxGUI\bin\Debug\InvoiceTaxGUI.exe.config
+C:\Users\kogie5792\source\repos\InvoiceTaxGUI\bin\Debug\InvoiceTaxGUI.exe
+C:\Users\kogie5792\source\repos\InvoiceTaxGUI\bin\Debug\InvoiceTaxGUI.pdb
+C:\Users\kogie5792\source\repos\InvoiceTaxGUI\obj\Debug\InvoiceTaxGUI.csprojAssemblyReference.cache
+C:\Users\kogie5792\source\repos\InvoiceTaxGUI\obj\Debug\MainWindow.g.cs
+C:\Users\kogie5792\source\repos\InvoiceTaxGUI\obj\Debug\App.g.cs
+C:\Users\kogie5792\source\repos\InvoiceTaxGUI\obj\Debug\InvoiceTaxGUI_MarkupCompile.cache
+C:\Users\kogie5792\source\repos\InvoiceTaxGUI\obj\Debug\InvoiceTaxGUI_MarkupCompile.lref
+C:\Users\kogie5792\source\repos\InvoiceTaxGUI\obj\Debug\MainWindow.baml
+C:\Users\kogie5792\source\repos\InvoiceTaxGUI\obj\Debug\InvoiceTaxGUI.g.resources
+C:\Users\kogie5792\source\repos\InvoiceTaxGUI\obj\Debug\InvoiceTaxGUI.Properties.Resources.resources
+C:\Users\kogie5792\source\repos\InvoiceTaxGUI\obj\Debug\InvoiceTaxGUI.csproj.GenerateResource.cache
+C:\Users\kogie5792\source\repos\InvoiceTaxGUI\obj\Debug\InvoiceTaxGUI.csproj.CoreCompileInputs.cache
+C:\Users\kogie5792\source\repos\InvoiceTaxGUI\obj\Debug\InvoiceTaxGUI.exe
+C:\Users\kogie5792\source\repos\InvoiceTaxGUI\obj\Debug\InvoiceTaxGUI.pdb

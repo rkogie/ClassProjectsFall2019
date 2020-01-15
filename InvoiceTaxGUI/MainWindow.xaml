@@ -1,0 +1,50 @@
+﻿<Window x:Name="Invoice_with_Tax_and_Shipping" x:Class="InvoiceTaxGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InvoiceTaxGUI"
+        mc:Ignorable="d"
+        Title="Invoice Tax Calculator" Height="512" Width="357">
+    <Grid Margin="3,1,-3,-1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="calculateButt" Content="Calculate" HorizontalAlignment="Left" Height="20" Margin="217,401,0,0" VerticalAlignment="Top" Width="93" Click="CalculateButt_Click"/>
+        <Label x:Name="Item1Label" Content="Item 1" HorizontalAlignment="Left" Margin="25,54,0,0" VerticalAlignment="Top" Height="26" Width="44"/>
+        <TextBox x:Name="Item1TBox" HorizontalAlignment="Left" Height="23" Margin="85,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" Cursor=""/>
+        <Label x:Name="Item2Label" Content="Item 2" HorizontalAlignment="Left" Margin="25,95,0,0" VerticalAlignment="Top" Height="26" Width="44"/>
+        <Label x:Name="Item3Label" Content="Item 3" HorizontalAlignment="Left" Margin="25,135,0,0" VerticalAlignment="Top" Height="26" Width="44"/>
+        <Label x:Name="Item4Label" Content="Item 4" HorizontalAlignment="Left" Margin="25,173,0,0" VerticalAlignment="Top" Height="26" Width="44"/>
+        <Label x:Name="SubLabel" Content="Subtotal" HorizontalAlignment="Left" Margin="25,223,0,0" VerticalAlignment="Top" Height="26" Width="54"/>
+        <Label x:Name="ShippLabel" Content="Shipping" HorizontalAlignment="Left" Margin="25,253,0,0" VerticalAlignment="Top" Height="26" Width="57"/>
+        <Label x:Name="PSTLabel" Content="PST " HorizontalAlignment="Left" Margin="25,303,0,0" VerticalAlignment="Top" Height="26" Width="33"/>
+        <Label x:Name="GSTLabel" Content="GST" HorizontalAlignment="Left" Margin="25,337,0,0" VerticalAlignment="Top" Height="26" Width="31"/>
+        <Label x:Name="TotLabel" Content="Total" HorizontalAlignment="Left" Margin="25,397,0,0" VerticalAlignment="Top" Height="26" Width="35"/>
+        <TextBox x:Name="Item3TBox" HorizontalAlignment="Left" Height="23" Margin="85,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111"/>
+        <TextBox x:Name="Item4TBox" HorizontalAlignment="Left" Height="23" Margin="85,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111"/>
+        <TextBox x:Name="SubTBox" HorizontalAlignment="Left" Height="23" Margin="85,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111"/>
+        <TextBox x:Name="ShipTBox" HorizontalAlignment="Left" Height="23" Margin="85,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111"/>
+        <TextBox x:Name="pstTbox" HorizontalAlignment="Left" Height="23" Margin="85,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111"/>
+        <TextBox x:Name="gstTBox" HorizontalAlignment="Left" Height="23" Margin="85,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111"/>
+        <TextBox x:Name="totalTBox" HorizontalAlignment="Left" Height="21" Margin="85,401,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111"/>
+        <Label x:Name="PSTLabel1" Content="PST?" HorizontalAlignment="Left" Margin="211,25,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="PSTItem1CkBox" Content="" HorizontalAlignment="Left" Margin="220,60,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="PSTItem2CkBox" Content="" HorizontalAlignment="Left" Margin="220,103,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="PSTItem3CkBox" Content="" HorizontalAlignment="Left" Margin="220,143,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="PSTItem4CkBox" Content="" HorizontalAlignment="Left" Margin="220,180,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="GSTLabel1" Content="GST?" HorizontalAlignment="Left" Margin="253,25,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="GSTItem1CkBox" Content="" HorizontalAlignment="Left" Margin="262,60,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="GSTItem2CkBox" Content="" HorizontalAlignment="Left" Margin="262,103,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="GSTItem3CkBox" Content="" HorizontalAlignment="Left" Margin="262,143,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="GSTItem4CkBox" Content="" HorizontalAlignment="Left" Margin="262,180,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="shipRadBut" Content="Ship (add 2%)" HorizontalAlignment="Left" Margin="220,262,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="pickupRadBut" Content="Pickup" HorizontalAlignment="Left" Margin="220,289,0,0" VerticalAlignment="Top" ClickMode="Press" IsChecked="True"/>
+        <TextBox x:Name="Item2TBox" HorizontalAlignment="Left" Height="23" Margin="85,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111"/>
+        <Label x:Name="errorMessBox" Content="" HorizontalAlignment="Left" Height="24" Margin="8,25,0,0" VerticalAlignment="Top" Width="188" FontWeight="Bold"/>
+        <Label x:Name="salesLabel" Content="Sales Commission" HorizontalAlignment="Left" Margin="25,434,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="salesTBox" HorizontalAlignment="Left" Height="20" Margin="140,440,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106"/>
+
+    </Grid>
+</Window>
