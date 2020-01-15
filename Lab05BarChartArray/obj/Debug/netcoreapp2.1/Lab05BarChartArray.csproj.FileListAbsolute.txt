@@ -1,0 +1,11 @@
+C:\Users\kogie5792\source\repos\Lab05BarChartArray\bin\Debug\netcoreapp2.1\Lab05BarChartArray.deps.json
+C:\Users\kogie5792\source\repos\Lab05BarChartArray\bin\Debug\netcoreapp2.1\Lab05BarChartArray.runtimeconfig.json
+C:\Users\kogie5792\source\repos\Lab05BarChartArray\bin\Debug\netcoreapp2.1\Lab05BarChartArray.runtimeconfig.dev.json
+C:\Users\kogie5792\source\repos\Lab05BarChartArray\bin\Debug\netcoreapp2.1\Lab05BarChartArray.dll
+C:\Users\kogie5792\source\repos\Lab05BarChartArray\bin\Debug\netcoreapp2.1\Lab05BarChartArray.pdb
+C:\Users\kogie5792\source\repos\Lab05BarChartArray\obj\Debug\netcoreapp2.1\Lab05BarChartArray.csprojAssemblyReference.cache
+C:\Users\kogie5792\source\repos\Lab05BarChartArray\obj\Debug\netcoreapp2.1\Lab05BarChartArray.csproj.CoreCompileInputs.cache
+C:\Users\kogie5792\source\repos\Lab05BarChartArray\obj\Debug\netcoreapp2.1\Lab05BarChartArray.AssemblyInfoInputs.cache
+C:\Users\kogie5792\source\repos\Lab05BarChartArray\obj\Debug\netcoreapp2.1\Lab05BarChartArray.AssemblyInfo.cs
+C:\Users\kogie5792\source\repos\Lab05BarChartArray\obj\Debug\netcoreapp2.1\Lab05BarChartArray.dll
+C:\Users\kogie5792\source\repos\Lab05BarChartArray\obj\Debug\netcoreapp2.1\Lab05BarChartArray.pdb
