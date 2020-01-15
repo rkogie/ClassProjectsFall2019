@@ -1,0 +1,15 @@
+C:\Users\kogie5792\source\repos\SavingsAndLoansCalculator\bin\Debug\SavingsAndLoansCalculator.exe.config
+C:\Users\kogie5792\source\repos\SavingsAndLoansCalculator\bin\Debug\SavingsAndLoansCalculator.exe
+C:\Users\kogie5792\source\repos\SavingsAndLoansCalculator\bin\Debug\SavingsAndLoansCalculator.pdb
+C:\Users\kogie5792\source\repos\SavingsAndLoansCalculator\obj\Debug\SavingsAndLoansCalculator.csprojAssemblyReference.cache
+C:\Users\kogie5792\source\repos\SavingsAndLoansCalculator\obj\Debug\MainWindow.g.cs
+C:\Users\kogie5792\source\repos\SavingsAndLoansCalculator\obj\Debug\App.g.cs
+C:\Users\kogie5792\source\repos\SavingsAndLoansCalculator\obj\Debug\SavingsAndLoansCalculator_MarkupCompile.cache
+C:\Users\kogie5792\source\repos\SavingsAndLoansCalculator\obj\Debug\SavingsAndLoansCalculator_MarkupCompile.lref
+C:\Users\kogie5792\source\repos\SavingsAndLoansCalculator\obj\Debug\MainWindow.baml
+C:\Users\kogie5792\source\repos\SavingsAndLoansCalculator\obj\Debug\SavingsAndLoansCalculator.g.resources
+C:\Users\kogie5792\source\repos\SavingsAndLoansCalculator\obj\Debug\SavingsAndLoansCalculator.Properties.Resources.resources
+C:\Users\kogie5792\source\repos\SavingsAndLoansCalculator\obj\Debug\SavingsAndLoansCalculator.csproj.GenerateResource.cache
+C:\Users\kogie5792\source\repos\SavingsAndLoansCalculator\obj\Debug\SavingsAndLoansCalculator.csproj.CoreCompileInputs.cache
+C:\Users\kogie5792\source\repos\SavingsAndLoansCalculator\obj\Debug\SavingsAndLoansCalculator.exe
+C:\Users\kogie5792\source\repos\SavingsAndLoansCalculator\obj\Debug\SavingsAndLoansCalculator.pdb
