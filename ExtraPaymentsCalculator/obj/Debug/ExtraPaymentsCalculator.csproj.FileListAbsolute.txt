@@ -1,0 +1,15 @@
+C:\Users\kogie5792\source\repos\ExtraPaymentsCalculator\bin\Debug\ExtraPaymentsCalculator.exe.config
+C:\Users\kogie5792\source\repos\ExtraPaymentsCalculator\bin\Debug\ExtraPaymentsCalculator.exe
+C:\Users\kogie5792\source\repos\ExtraPaymentsCalculator\bin\Debug\ExtraPaymentsCalculator.pdb
+C:\Users\kogie5792\source\repos\ExtraPaymentsCalculator\obj\Debug\ExtraPaymentsCalculator.csprojAssemblyReference.cache
+C:\Users\kogie5792\source\repos\ExtraPaymentsCalculator\obj\Debug\MainWindow.g.cs
+C:\Users\kogie5792\source\repos\ExtraPaymentsCalculator\obj\Debug\App.g.cs
+C:\Users\kogie5792\source\repos\ExtraPaymentsCalculator\obj\Debug\ExtraPaymentsCalculator_MarkupCompile.cache
+C:\Users\kogie5792\source\repos\ExtraPaymentsCalculator\obj\Debug\ExtraPaymentsCalculator_MarkupCompile.lref
+C:\Users\kogie5792\source\repos\ExtraPaymentsCalculator\obj\Debug\MainWindow.baml
+C:\Users\kogie5792\source\repos\ExtraPaymentsCalculator\obj\Debug\ExtraPaymentsCalculator.g.resources
+C:\Users\kogie5792\source\repos\ExtraPaymentsCalculator\obj\Debug\ExtraPaymentsCalculator.Properties.Resources.resources
+C:\Users\kogie5792\source\repos\ExtraPaymentsCalculator\obj\Debug\ExtraPaymentsCalculator.csproj.GenerateResource.cache
+C:\Users\kogie5792\source\repos\ExtraPaymentsCalculator\obj\Debug\ExtraPaymentsCalculator.csproj.CoreCompileInputs.cache
+C:\Users\kogie5792\source\repos\ExtraPaymentsCalculator\obj\Debug\ExtraPaymentsCalculator.exe
+C:\Users\kogie5792\source\repos\ExtraPaymentsCalculator\obj\Debug\ExtraPaymentsCalculator.pdb

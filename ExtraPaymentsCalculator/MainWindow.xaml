@@ -1,0 +1,27 @@
+﻿<Window x:Class="ExtraPaymentsCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExtraPaymentsCalculator"
+        mc:Ignorable="d"
+        Title="Loan Repayment Calculator - Extra Payments " Height="587" Width="434">
+    <Grid>
+        <Label x:Name="loanPrincipalLabek" Content="Loan Principal" HorizontalAlignment="Left" Height="25" Margin="21,16,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="monPayLabel" Content="Monthly Payments" HorizontalAlignment="Left" Margin="21,48,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="interestLabel" Content="Annual Interest Rate" HorizontalAlignment="Left" Height="30" Margin="21,144,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="numMonthLabel" Content="Number of Months" HorizontalAlignment="Left" Height="29" Margin="21,178,0,0" VerticalAlignment="Top" Width="115"/>
+        <TextBox x:Name="loanPrincTBox" HorizontalAlignment="Left" Height="25" Margin="145,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="monthlyPayTBox" HorizontalAlignment="Left" Height="25" Margin="145,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="interestTBox" HorizontalAlignment="Left" Height="25" Margin="145,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="numMonthTBox" HorizontalAlignment="Left" Height="27" Margin="145,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="calcButton" Content="Calculate" HorizontalAlignment="Left" Height="27" Margin="290,180,0,0" VerticalAlignment="Top" Width="115" FontFamily="Arial" Click="Button_Click" FontWeight="Bold"/>
+        <TextBox x:Name="MultiLineOutputTbox" HorizontalAlignment="Left" Height="285" Margin="20,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="385" VerticalScrollBarVisibility="Visible" FontFamily="Consolas"/>
+        <Label x:Name="errorMessBox" Content="" HorizontalAlignment="Left" Height="29" Margin="21,214,0,0" VerticalAlignment="Top" Width="234" FontWeight="Bold"/>
+        <Label x:Name="nthPayLabel" Content="on each nth payment" HorizontalAlignment="Left" Height="26" Margin="94,79,0,0" VerticalAlignment="Top" Width="129"/>
+        <Label x:Name="extraPaymentLabel" Content="make extra payments of" HorizontalAlignment="Left" Height="29" Margin="94,110,0,0" VerticalAlignment="Top" Width="145"/>
+        <TextBox x:Name="extraPaymentFrequencyTextBox" HorizontalAlignment="Left" Height="26" Margin="266,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119"/>
+        <TextBox x:Name="extraPaymentAmountTextBox" HorizontalAlignment="Left" Height="25" Margin="266,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119"/>
+
+    </Grid>
+</Window>
