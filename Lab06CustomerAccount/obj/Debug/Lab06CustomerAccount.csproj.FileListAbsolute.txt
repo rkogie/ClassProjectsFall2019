@@ -1,0 +1,15 @@
+C:\Users\kogie5792\source\repos\Lab06CustomerAccount\bin\Debug\Lab06CustomerAccount.exe.config
+C:\Users\kogie5792\source\repos\Lab06CustomerAccount\bin\Debug\Lab06CustomerAccount.exe
+C:\Users\kogie5792\source\repos\Lab06CustomerAccount\bin\Debug\Lab06CustomerAccount.pdb
+C:\Users\kogie5792\source\repos\Lab06CustomerAccount\obj\Debug\Lab06CustomerAccount.csprojAssemblyReference.cache
+C:\Users\kogie5792\source\repos\Lab06CustomerAccount\obj\Debug\MainWindow.g.cs
+C:\Users\kogie5792\source\repos\Lab06CustomerAccount\obj\Debug\App.g.cs
+C:\Users\kogie5792\source\repos\Lab06CustomerAccount\obj\Debug\Lab06CustomerAccount_MarkupCompile.cache
+C:\Users\kogie5792\source\repos\Lab06CustomerAccount\obj\Debug\Lab06CustomerAccount_MarkupCompile.lref
+C:\Users\kogie5792\source\repos\Lab06CustomerAccount\obj\Debug\MainWindow.baml
+C:\Users\kogie5792\source\repos\Lab06CustomerAccount\obj\Debug\Lab06CustomerAccount.g.resources
+C:\Users\kogie5792\source\repos\Lab06CustomerAccount\obj\Debug\Lab06CustomerAccount.Properties.Resources.resources
+C:\Users\kogie5792\source\repos\Lab06CustomerAccount\obj\Debug\Lab06CustomerAccount.csproj.GenerateResource.cache
+C:\Users\kogie5792\source\repos\Lab06CustomerAccount\obj\Debug\Lab06CustomerAccount.csproj.CoreCompileInputs.cache
+C:\Users\kogie5792\source\repos\Lab06CustomerAccount\obj\Debug\Lab06CustomerAccount.exe
+C:\Users\kogie5792\source\repos\Lab06CustomerAccount\obj\Debug\Lab06CustomerAccount.pdb
